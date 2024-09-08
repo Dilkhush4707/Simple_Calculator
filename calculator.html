@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>calculator</title>
+    <link rel="stylesheet" href="calculator.css" />
+  </head>
+  <body>
+    <div class="calculator">
+      <div class="unotch"></div>
+      <div class="input">
+        <input id="display" type="text" />
+        <input id="display1" type="text" />
+      </div>
+
+      <div class="button-containor">
+        <button
+          class="size"
+          onclick="output = '0';
+        document.querySelector('#display').value = output ;"
+        >
+          AC
+        </button>
+        <button class="size">+-</button>
+        <button class="size">%</button>
+        <button
+          class="size sbutton"
+          onclick="output = output+'/';
+      document.querySelector('#display').value = output ;"
+        >
+          /
+        </button>
+
+        <button
+          class="size nbutton"
+          onclick="output = output+'7';
+      document.querySelector('#display').value = output ;"
+        >
+          7
+        </button>
+        <button
+          class="size nbutton"
+          onclick="output = output+'8';
+    document.querySelector('#display').value = output ;"
+        >
+          8
+        </button>
+        <button
+          class="size nbutton"
+          onclick="output = output+'9';
+        document.querySelector('#display').value = output ;"
+        >
+          9
+        </button>
+        <button
+          class="size sbutton"
+          onclick="output = output+'*';
+    document.querySelector('#display').value = output ;"
+        >
+          x
+        </button>
+        <button
+          class="size nbutton"
+          onclick="output = output+'4';
+document.querySelector('#display').value = output ;"
+        >
+          4
+        </button>
+        <button
+          class="size nbutton"
+          onclick="output = output+'5';
+        document.querySelector('#display').value = output ;"
+        >
+          5
+        </button>
+
+        <button
+          class="size nbutton"
+          onclick="output = output+'6';
+        document.querySelector('#display').value = output ;"
+        >
+          6
+        </button>
+        <button
+          class="size sbutton"
+          onclick="output = output+'-';
+      document.querySelector('#display').value = output ;"
+        >
+          -
+        </button>
+        <button
+          class="size nbutton"
+          onclick="output = output+'1';
+      document.querySelector('#display').value = output ;"
+        >
+          1
+        </button>
+        <button
+          class="size nbutton"
+          onclick="output = output+'2';
+    document.querySelector('#display').value = output ;"
+        >
+          2
+        </button>
+        <button
+          class="size nbutton"
+          onclick="output = output+'3';
+  document.querySelector('#display').value = output ;"
+        >
+          3
+        </button>
+
+        <button
+          class="Button+ size sbutton"
+          onclick="output = output+'+';
+      document.querySelector('#display').value = output ;"
+        >
+          +
+        </button>
+
+        <button
+          class="size nbutton"
+          onclick="output = output+'0';
+      document.querySelector('#display').value = output ;"
+        >
+          0
+        </button>
+        <button
+          class="size nbutton"
+          onclick="output = output+'.';
+        document.querySelector('#display').value = output ;"
+        >
+          .
+        </button>
+        <button class="size nbutton"><</button>
+        <button
+          class="size sequl"
+          onclick="
+      output = eval(output);
+      document.querySelector('#display1').value = output;
+     
+      "
+        >
+          =
+        </button>
+      </div>
+      <div class="notch"></div>
+    </div>
+
+    <script>
+      let output = "";
+      document.querySelector("#display").value = output;
+    </script>
+  </body>
+</html>
